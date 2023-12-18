@@ -1,0 +1,195 @@
+:root {
+    --lightmode-background-color: #f9f9f9;
+    --lightmode-clear-font-color: #ffffff;
+    --lightmode-header-background-color: #009688;
+    --lightmode-dark-font-color: #000000;
+    --lightmode-medium-font-color: #5d5d5d;
+    --lightmode-selected-background-color: #673ab7;
+    --transparent-background: 
+}
+
+::selection {
+    color: var(--lightmode-clear-font-color);
+    background-color: var(--lightmode-selected-background-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--lightmode-background-color);
+    font-family: sans-serif;
+    box-sizing: border-box;
+    flood-color: #673ab7;
+}
+
+#nav-bar-container {
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--lightmode-header-background-color);
+}
+
+#nav-bar-container a {
+    font-weight: 700;
+    padding:  10px 25px;
+    font-size: larger;
+    text-decoration: none;
+    color: var(--lightmode-clear-font-color);
+    background-color: var(--lightmode-header-background-color);
+}
+
+#nav-bar-container ul li a:hover {
+    background-color: var(--lightmode-selected-background-color);
+    border-radius: 20px;
+}
+
+#nav-bar-container ul .dashboard {
+    background-color: var(--lightmode-selected-background-color);
+    border-radius: 20px;
+}
+
+#nav-bar-container h1 {
+    font-size: x-large;
+    background-color: var(--lightmode-header-background-color);
+}
+
+.nav-bar-items {
+    display: inline-flex;
+}
+
+.nav-bar-items li {
+    list-style: none;
+    padding: 0px 100px 0px 100px;
+    background-color: var(--lightmode-header-background-color);
+}
+
+#profile-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--lightmode-header-background-color);
+}
+
+#profile-container p {
+    padding: 0px 10px 0px 0px;
+    color: var(--lightmode-clear-font-color);
+    background-color: var(--lightmode-header-background-color);
+}
+
+.profile-picture {
+    content: url(/Images/user-icon.png);
+    border-radius: 50%;
+    border: 2px;
+    border-style: solid;
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.username {
+    font-weight: 700;
+}
+
+#body-container {
+    margin: 30px auto;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#profile-card {
+    padding-top: 20px;
+    display: block;
+    width: 25%;
+}
+
+#profile-card .pp {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card p {
+    padding-bottom: 10px;
+}
+
+.card .right-card #role-field {
+    padding-bottom: 30px;
+}
+
+.card .left-card {
+    text-align: end;
+}
+
+.card .left-card #role {
+    padding-bottom: 30px;
+}
+
+.subjects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.subjects-container .subject {
+    color: var(--lightmode-medium-font-color);
+    border: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    max-width: 350px;
+    text-align: center;
+    margin: 15px 15px;
+    cursor: pointer;
+}
+
+.subjects-container .subject img {
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.subjects-container .subject .subject-info {
+    height: 80px;
+}
+
+.subjects-container .subject .subject-info .subject-title {
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: var(--lightmode-dark-font-color);
+}
+
+.subjects-container .subject .subject-info .subject-area {
+    font-weight: 400;
+    color: var(--lightmode-medium-font-color);
+}
+
+#rigth-side-menu {
+    padding-top: 20px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#rigth-side-menu #side-menu {
+    justify-content: space-between;
+    text-align: center;
+    width: 70%;
+}
+
+#side-menu-card li {
+    list-style: none;
+    text-align: center;
+    padding: 5px;   
+    background-color: var(--lightmode-clear-font-color);
+}
+
+#side-menu-card li a {
+    text-decoration: none;
+    color: var(--lightmode-dark-font-color);
+    background-color: var(--lightmode-clear-font-color);
+}
